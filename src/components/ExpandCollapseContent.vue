@@ -10,7 +10,7 @@
         </div>
         <div class="small-22">
           {{ item.attributes.Address }}<br>
-          Philadelphia <br>
+          Philadelphia, PA {{ item.attributes.CODE }} <br>
         </div>
       </div>
 <!-- 
@@ -41,93 +41,8 @@
         </div>
       </div> -->
     </div>
-
-    <div class="cell medium-12">
-      <div
-        v-if="item.attributes.facility_type"
-        class="grid-x detail"
-      >
-        <div class="small-2">
-          <font-awesome-icon icon="building" />
-        </div>
-        <div
-          class="small-22"
-        >
-          <div>
-            {{ $t( 'facilityType[\'' + item.attributes.facility_type + '\']') }}
-          </div>
-
-          <div
-            v-if="item.attributes.drive_thruwalk_up !== null"
-          >
-            {{ $t( 'process[\'' + item.attributes.drive_thruwalk_up + '\']') }}
-          </div>
-        </div>
-      </div>
-
-      <div
-        v-if="item.attributes.facility_type"
-        class="grid-x detail"
-      >
-        <div class="small-2">
-          <font-awesome-icon icon="user-md" />
-        </div>
-        <div
-          class="small-22"
-        >
-          <div>
-            {{ $t( 'patientAge[\'' + item.attributes.Age + '\']') }}
-          </div>
-
-          <div>
-            {{ $t( 'refReq[\'' + item.attributes.Referral + '\']') }}
-          </div>
-
-          <!-- v-if="item.attributes.drive_thruwalk_up !== null" -->
-          <div>
-            {{ $t( 'symptomatic[\'' + item.attributes.Symptoms + '\']') }}
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="small-24">
-      <vertical-table-light
-        class="print-padding"
-        :slots="mainVerticalTableSlots"
-        :options="mainVerticalTableOptions"
-      >
-        <template
-          v-slot:component1
-          class="table-slot"
-        >
-          <div class="td-textbox">
-            <span
-              v-show="item.attributes.testing_restrictions != null"
-              class="td-style"
-            >
-              {{ $t('restrictions[\'' + item.attributes.testing_restrictions + '\']') }}
-            </span>
-            <span
-              v-show="item.attributes.Notes != null"
-              class="td-style"
-            >
-              {{ $t('notes[\'' + item.attributes.Notes + '\']') }}
-            </span>
-          </div>
-        </template>
-
-        <template
-          v-slot:component2
-          class="table-slot"
-        >
-          <vertical-table-light
-            class="print-padding"
-            :slots="component1VerticalTableSlots"
-            :options="component1VerticalTableOptions"
-          />
-        </template>
-      </vertical-table-light>
+    <div>
+      Fill out the <a href="https://www.cognitoforms.com/DHSOST1/AccessCenterRegistrationInterestForm" class="external">Registration Interest Form</a>
     </div>
   </div>
 </template>

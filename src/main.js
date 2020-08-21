@@ -28,10 +28,10 @@ import accessCenters from './data-sources/access-centers';
 var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/mapboard-default-base-config@6126861722cee9384694742363d1661e771493b9/config.js';
 
 import expandCollapseContent from './components/ExpandCollapseContent.vue';
-import customGreeting from './components/customGreeting.vue';
+//import customGreeting from './components/customGreeting.vue';
 const customComps = {
   'expandCollapseContent': expandCollapseContent,
-  'customGreeting': customGreeting,
+  // 'customGreeting': customGreeting,
 };
 
 pinboard({
@@ -368,8 +368,8 @@ pinboard({
   i18n: {
     header: 'i18nBanner',
     enabled: true,
-    refinePanel: true,
-    expandCollapseTitle: true,
+    refinePanel: false,
+    expandCollapseTitle: false,
     footer: true,
     data: {
       locale: 'en-US',
@@ -377,14 +377,14 @@ pinboard({
         'en-US': {
           language: 'English',
           app: {
-            title: 'Access sites',
-            subtitle: 'Digital access sites',
+            title: 'Access centers',
+            subtitle: 'Providing students with internet access and a safe environment for digital learning.',
             // bannerAlert: 'Many sites are closed today. Check specific site details for more information.',
             noResults: 'No testing site was found within your search. Please call your health care provider or visit the Department of Public Health’s COVID-19 website for information about <a href="https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/guidance/faq/#getting-tested" target="_blank">getting tested in Philadelphia</a>.',
           },
           introPage: {
             introTitle: 'About this finder',
-            p1: 'This tool can help you find a COVID-19 test in Philadelphia. (See our FAQ for more information about <a href="https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/guidance/faq/#getting-tested" target="_blank">who should get tested</a>.) You can:',
+            p1: 'This tool can help you find an access center near you. (See our FAQ for more information about <a href="https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/guidance/faq/#getting-tested" target="_blank">who should get tested</a>.) You can:',
             ul1: {
               li1: 'Search for a testing site by address.',
               li2: 'Click on a map location for specific site information.',
