@@ -58,7 +58,7 @@
         class="custom-callout"
       >
         <p class="no-margins">
-          Questions? Call (215) 709-5366 for help filling out the Access Center registration interest form, or if you need language interpretation services. Help is available Monday through Friday from 8 a.m. to 6 p.m. 
+          <strong>Questions?</strong> Call (215) 709-5366 for help filling out the Access Center registration interest form, or if you need language interpretation services. Help is available Monday through Friday from 8 a.m. to 6 p.m. 
         </p>
       </div>
     </div> <!-- end of main-area -->
