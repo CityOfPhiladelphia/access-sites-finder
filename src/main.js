@@ -28,18 +28,18 @@ import accessCenters from './data-sources/access-centers';
 var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/mapboard-default-base-config@6126861722cee9384694742363d1661e771493b9/config.js';
 
 import expandCollapseContent from './components/ExpandCollapseContent.vue';
-//import customGreeting from './components/customGreeting.vue';
+import customGreeting from './components/customGreeting.vue';
 const customComps = {
   'expandCollapseContent': expandCollapseContent,
-  // 'customGreeting': customGreeting,
+  'customGreeting': customGreeting,
 };
 
 pinboard({
   alerts: {
     modal: {
-      enabled: false,
-      header: 'Possible closures',
-      body: '<p>All City-run COVID-19 testing sites and health centers are open and on a normal schedule, though others may be closed. Please call ahead to ensure that the site you are going to is open.</p>',
+      enabled: true,
+      header: 'Access Centers ',
+      body: '<p>Access Centers are free, but you must check eligibility and register your child in advance. For full program details, visit the <a href="https://www.phila.gov/access-centers">Access Centers webpage</a>.',
     },
     // header: {
     //   type: 'alertBanner',
@@ -368,7 +368,7 @@ pinboard({
   i18n: {
     header: 'i18nBanner',
     enabled: true,
-    refinePanel: false,
+    refinePanel: true,
     expandCollapseTitle: false,
     footer: true,
     data: {
@@ -384,20 +384,19 @@ pinboard({
           },
           introPage: {
             introTitle: 'About this finder',
-            p1: 'This tool can help you find an access center near you. (See our FAQ for more information about <a href="https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/guidance/faq/#getting-tested" target="_blank">who should get tested</a>.) You can:',
+            p1: 'This tool can help you find an Access Center in Philadelphia.  You can:',
             ul1: {
-              li1: 'Search for a testing site by address.',
+              li1: 'Search for an Access Center by address.',
               li2: 'Click on a map location for specific site information.',
-              li3: 'Filter the site list by the tags provided.',
             },
-            section1Title: 'Find out if you’re eligible',
-            p2: '​No testing site will ask you for money. You will be asked for identification and may also be asked for health insurance information. If you don’t have identification or health insurance, you can still get a test. In addition, some sites may:',
-            ul2: {
-              li1: 'Limit testing to people who meet certain criteria.',
-              li2: 'Require an appointment.',
-              li3: 'Require a referral from your doctor.',
-              li4: 'Ask you to stay in your car (for drive-thru sites).',
-            },
+            //section1Title: 'Find out if you’re eligible',
+            p2: '​Access Centers help kids and their families with their internet access and childcare needs during digital learning time (weekdays from 8:00 a.m. to 4:30 p.m.). Access Centers are free, but you must check eligibility and register your child in advance. For full program details, visit the Access Centers webpage. ',
+            // ul2: {
+            //   li1: 'Limit testing to people who meet certain criteria.',
+            //   li2: 'Require an appointment.',
+            //   li3: 'Require a referral from your doctor.',
+            //   li4: 'Ask you to stay in your car (for drive-thru sites).',
+            // },
             p3: 'Check a location’s specific details on the map. Then, call or visit the provider\'s website before going for a test.',
             callout1: {
               p1: '<b>Questions?</b> Please call your health care provider or see our FAQ about <a href="https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/guidance/faq/#getting-tested" target="_blank">getting tested in Philadelphia</a>.',
