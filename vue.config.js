@@ -1,6 +1,7 @@
 module.exports = {
   filenameHashing: false,
-  publicPath: "/access-centers/",
+  ///publicPath: "/access-centers/",
+  publicPath: "access-centers/dev/",
   chainWebpack: (config) => {
     config.resolve.symlinks(false);
   },
