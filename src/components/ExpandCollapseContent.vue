@@ -13,9 +13,6 @@
           Philadelphia, PA {{ item.attributes.CODE }} <br>
         </div>
       </div>
-      <div>
-        Weekdays from 8:00 a.m. to 4:30 p.m.<br>
-      </div>
     <!-- 
       <div
         v-if="item.attributes.ProviderURL"
@@ -45,13 +42,17 @@
       </div> -->
     </div>
     <div>
+      Registration required. <br>
       Fill out the <a
         href="https://www.cognitoforms.com/DHSOST1/AccessCenterRegistrationInterestForm" 
         target="_blank">Registration Interest Form
         <font-awesome-icon
           icon="external-link-alt"
-        /></a>
+        /></a>.
     </div>
+        <div>
+        <b>Eligibility:</b> Priority will be given to families who work outside of the home and can’t afford or access childcare support.<br>
+      </div>
   </div>
 </template>
 
