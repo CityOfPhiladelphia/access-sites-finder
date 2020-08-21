@@ -13,7 +13,10 @@
           Philadelphia, PA {{ item.attributes.CODE }} <br>
         </div>
       </div>
-<!-- 
+      <div>
+        Weekdays from 8:00 a.m. to 4:30 p.m.<br>
+      </div>
+    <!-- 
       <div
         v-if="item.attributes.ProviderURL"
         class="grid-x detail"
@@ -42,7 +45,12 @@
       </div> -->
     </div>
     <div>
-      Fill out the <a href="https://www.cognitoforms.com/DHSOST1/AccessCenterRegistrationInterestForm" class="external">Registration Interest Form</a>
+      Fill out the <a
+        href="https://www.cognitoforms.com/DHSOST1/AccessCenterRegistrationInterestForm" 
+        target="_blank">Registration Interest Form
+        <font-awesome-icon
+          icon="external-link-alt"
+        /></a>
     </div>
   </div>
 </template>

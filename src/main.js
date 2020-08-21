@@ -17,7 +17,9 @@ import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons/faExcla
 import { faBuilding } from '@fortawesome/free-solid-svg-icons/faBuilding';
 import { faUserMd } from '@fortawesome/free-solid-svg-icons/faUserMd';
 import { faCircle } from '@fortawesome/free-solid-svg-icons/faCircle';
-library.add(faExclamationTriangle, faBuilding, faUserMd, faCircle);
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons/faExternalLinkAlt";
+
+library.add(faExclamationTriangle, faBuilding, faUserMd, faCircle, faExternalLinkAlt );
 
 // import pinboard
 import pinboard from '@phila/pinboard/src/main.js';
@@ -390,7 +392,7 @@ pinboard({
               li2: 'Click on a map location for specific site information.',
             },
             //section1Title: 'Find out if you’re eligible',
-            p2: '​Access Centers help kids and their families with their internet access and childcare needs during digital learning time (weekdays from 8:00 a.m. to 4:30 p.m.). Access Centers are free, but you must check eligibility and register your child in advance. For full program details, visit the Access Centers webpage. ',
+            p2: '​',
             // ul2: {
             //   li1: 'Limit testing to people who meet certain criteria.',
             //   li2: 'Require an appointment.',
