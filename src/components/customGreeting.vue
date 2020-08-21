@@ -41,7 +41,6 @@
       <ul>
         <li>Entering kindergarten through sixth grade. </li>
         <li>Children of caregivers working outside the home who cannot provide supervision or are not able to afford or access childcare. </li>
-        <li>Living in homes without internet access. </li>
       </ul>
       <p>Access Centers provide childcare support for families without other options. Don’t qualify? Up to 35,000 eligible K-12 households who need help with in-home internet access for digital learning can learn more about their options through <a href="https://www.phila.gov/programs/phlconnected/">PHLConnectEd</a>. </p>
       <h2>How to register </h2>
