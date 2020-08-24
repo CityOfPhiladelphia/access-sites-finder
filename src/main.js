@@ -386,7 +386,7 @@ pinboard({
           language: 'English',
           app: {
             title: 'Access Centers',
-            subtitle: 'Providing students with internet access and a safe environment for digital learning.',
+            subtitle: 'Providing families without childcare a safe space for digital learning."',
             // bannerAlert: 'Many sites are closed today. Check specific site details for more information.',
             noResults: 'No testing site was found within your search. Please call your health care provider or visit the Department of Public Health’s COVID-19 website for information about <a href="https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/guidance/faq/#getting-tested" target="_blank">getting tested in Philadelphia</a>.',
           },

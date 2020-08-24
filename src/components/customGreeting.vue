@@ -53,6 +53,7 @@
           /></a> or call (215) 709-5366. 
         </li>
       </ul>
+      <p>Students are NOT registered until confirmed by an Access Center. If you are eligible, an Access Center team member will reach out to help you with the next step of registration. If you are not eligible, you will receive a response letting you know.</p>
       <div
         class="custom-callout"
       >
