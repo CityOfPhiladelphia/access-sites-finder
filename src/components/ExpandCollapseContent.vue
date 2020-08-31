@@ -48,10 +48,12 @@
         target="_blank">Registration Interest Form
         <font-awesome-icon
           icon="external-link-alt"
-        /></a>.
-    </div>
+        /></a>. <br>
+    </div><br>
         <div>
-        <b>Eligibility:</b> Priority will be given to families who work outside of the home and can’t afford or access childcare support.<br>
+        <p><b>Eligibility:</b> Priority will be given to families who work outside of the home and can’t afford or access childcare support.</p>
+        <b>Opening date:</b> <span v-if="item.attributes.Phase == 1">September, 8 2020</span>
+        <span v-if="item.attributes.Phase == 2">September, 21 2020</span><br>
       </div>
   </div>
 </template>
