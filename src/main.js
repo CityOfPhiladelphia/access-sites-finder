@@ -72,6 +72,9 @@ pinboard({
     logoAlt: 'City of Philadelphia',
     type: 'accessCenters',
   },
+  gtag: {
+    category: 'rf-access',
+  },
   comboSearch: {
     dropdown: [ 'address' ],
   },
@@ -253,7 +256,7 @@ pinboard({
     'HowToUse': false,
     'OtherLinks': {
       locations: {
-        text: 'View accessible list of site locations',
+        text: 'viewAccessible',
         link: 'https://www.phila.gov/programs/access-centers/access-center-sites/#/',
       },
     },
@@ -410,6 +413,7 @@ pinboard({
               p1: '<b>Questions?</b> Please call your health care provider or see our FAQ about <a href="https://www.phila.gov/programs/coronavirus-disease-2019-covid-19/guidance/faq/#getting-tested" target="_blank">getting tested in Philadelphia</a>.',
             },
           },
+          viewAccessible: 'View accessible list of site locations',
           beforeYouGo: 'Before you go',
           checkSite: 'Eligibility requirements and testing hours vary by site. Be sure to check site details to arrange for testing.',
           hoursVary: 'Hours and availability varies.',
