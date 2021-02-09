@@ -61,7 +61,13 @@ pinboard({
   refine: {
     type: 'categoryField_value',
     value: function(item) {
-      return item.attributes.Availability;
+      let value;
+      if (item.attributes.Availability === "Likely Availability") {
+        value = 'Spaces likely available';
+      } else if (item.attributes.Availability === "No Availability") {
+        value = 'No spaces available';
+      }
+      return value;
     },
   },
   markerType: 'circle-marker',
