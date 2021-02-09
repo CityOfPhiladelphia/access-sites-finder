@@ -17,9 +17,12 @@ import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons/faExcla
 import { faBuilding } from '@fortawesome/free-solid-svg-icons/faBuilding';
 import { faUserMd } from '@fortawesome/free-solid-svg-icons/faUserMd';
 import { faCircle } from '@fortawesome/free-solid-svg-icons/faCircle';
+import { faCheck } from '@fortawesome/free-solid-svg-icons/faCheck';
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons/faTimesCircle';
+
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons/faExternalLinkAlt";
 
-library.add(faExclamationTriangle, faBuilding, faUserMd, faCircle, faExternalLinkAlt );
+library.add(faExclamationTriangle, faBuilding, faUserMd, faCircle, faExternalLinkAlt, faCheck, faTimesCircle);
 
 // import pinboard
 import pinboard from '@phila/pinboard/src/main.js';
