@@ -26,8 +26,6 @@ import pinboard from '@phila/pinboard/src/main.js';
 
 // data-sources
 import accessCenters from './data-sources/access-centers';
-// import compiled from './data-sources/compiled';
-var BASE_CONFIG_URL = 'https://cdn.jsdelivr.net/gh/cityofphiladelphia/mapboard-default-base-config@6126861722cee9384694742363d1661e771493b9/config.js';
 
 import expandCollapseContent from './components/ExpandCollapseContent.vue';
 import customGreeting from './components/customGreeting.vue';
@@ -37,40 +35,16 @@ const customComps = {
 };
 
 pinboard({
+  app: {
+    logoAlt: 'City of Philadelphia',
+    type: 'accessCenters',
+  },
   alerts: {
     modal: {
       enabled: true,
       header: 'Access Centers ',
       body: '<p>Access Centers are free, but you must check eligibility and register your child in advance. For full program details, visit the <a href="https://www.phila.gov/access-centers">Access Centers webpage</a>.',
     },
-    // header: {
-    //   type: 'alertBanner',
-    //   // enabled: function(state) {
-    //   //   return state.alertResponse === 'alertHours';
-    //   // },
-    //   // content: '<b>Until further notice:</b> Please call ahead or check hours of operation while business restrictions are still in effect.',
-    // },
-    alertChecks: [
-      // {
-      //   type: 'alertHours',
-      //   condition: [
-      //     {
-      //       'day': 1,
-      //       'startTime': '1:00',
-      //       'endTime': '23:59',
-      //     },
-      //     {
-      //       'day': 2,
-      //       'startTime': '1:00',
-      //       'endTime': '23:59',
-      //     },
-      //   ],
-      // },
-    ],
-  },
-  app: {
-    logoAlt: 'City of Philadelphia',
-    type: 'accessCenters',
   },
   gtag: {
     category: 'rf-access',
@@ -80,142 +54,14 @@ pinboard({
   },
   locationInfo: {
     siteName: function(item) {
-      console.log(`  locationInfo:`, item );
-
       return item.attributes.Asset_Name;
     },
   },
   customComps,
-  baseConfig: BASE_CONFIG_URL,
-  // holidays: {
-  //   days: ['Monday'],
-  // },
-  hiddenRefine: {
-    // City: function(item) {
-    //   return item.attributes.City === 'Philadelphia';
-    // },
-    // Visibility: function(item) {
-    //   return item.attributes.Visibility === 'pub' || item.attributes.Visibility === 'For Public View';
-    // },
-  },
   refine: {
-    type: 'multipleFieldGroups',
-    multipleFieldGroups: {
-      // daysOfOperation: {
-      //   'Monday': {
-      //     unique_key: 'day_Monday',
-      //     value: function(item) {
-      //       return item.attributes.Monday !== null;
-      //     },
-      //   },
-      //   'Tuesday': {
-      //     unique_key: 'day_Tuesday',
-      //     value: function(item) {
-      //       return item.attributes.Tuesday !== null;
-      //     },
-      //   },
-      //   'Wednesday': {
-      //     unique_key: 'day_Wednesday',
-      //     value: function(item) {
-      //       return item.attributes.Wednesday !== null;
-      //     },
-      //   },
-      //   'Thursday': {
-      //     unique_key: 'day_Thursday',
-      //     value: function(item) {
-      //       return item.attributes.Thursday !== null;
-      //     },
-      //   },
-      //   'Friday': {
-      //     unique_key: 'day_Friday',
-      //     value: function(item) {
-      //       return item.attributes.Friday !== null;
-      //     },
-      //   },
-      //   'Saturday': {
-      //     unique_key: 'day_Saturday',
-      //     value: function(item) {
-      //       return item.attributes.Saturday !== null;
-      //     },
-      //   },
-      //   'Sunday': {
-      //     unique_key: 'day_Sunday',
-      //     value: function(item) {
-      //       return item.attributes.Sunday !== null;
-      //     },
-      //   },
-      // },
-    //   patientAge: {
-    //     '+18 years old': {
-    //       unique_key: 'year18',
-    //       i18n_key: 'patientAge.year18',
-    //       value: function(item) {
-    //         return item.attributes.Age === 'year18';
-    //       },
-    //     },
-    //     '+14 years old': {
-    //       unique_key: 'year14',
-    //       i18n_key: 'patientAge.year14',
-    //       value: function(item) {
-    //         return item.attributes.Age === 'year14';
-    //       },
-    //     },
-    //     'Offers pediatric care': {
-    //       unique_key: 'pedCare',
-    //       i18n_key: 'patientAge.pedCare',
-    //       value: function(item) {
-    //         return item.attributes.Age === 'pedCare';
-    //       },
-    //     },
-    //   },
-    //   refReq: {
-    //     'Yes': {
-    //       unique_key: 'referral_yes',
-    //       i18n_key: 'Yes',
-    //       value: function(item) {
-    //         return item.attributes.Referral === 'yes';
-    //       },
-    //     },
-    //     'No': {
-    //       unique_key: 'referral_no',
-    //       i18n_key: 'No',
-    //       value: function(item) {
-    //         return item.attributes.Referral === 'no';
-    //       },
-    //     },
-    //   },
-    //   symptomatic: {
-    //     'Yes': {
-    //       unique_key: 'symptom_yes',
-    //       i18n_key: 'Yes',
-    //       value: function(item) {
-    //         return item.attributes.Symptoms === 'symptom';
-    //       },
-    //     },
-    //     'No': {
-    //       unique_key: 'symptom_no',
-    //       i18n_key: 'No',
-    //       value: function(item) {
-    //         return item.attributes.Symptoms === 'asymptom';
-    //       },
-    //     },
-    //   },
-    //   process: {
-    //     'Drive thru': {
-    //       unique_key: 'dtwu_driveThru',
-    //       i18n_key: 'process.dt',
-    //       value: function(item) {
-    //         return [ 'dt', 'both' ].includes(item.attributes.drive_thruwalk_up);
-    //       },
-    //     },
-    //     'Walk up': {
-    //       unique_key: 'dtwu_walkUp',
-    //       i18n_key: 'process.wu',
-    //       value: function(item) {
-    //         return [ 'wu', 'both' ].includes(item.attributes.drive_thruwalk_up);
-    //       },
-    //     },
-    //   },
+    type: 'categoryField_value',
+    value: function(item) {
+      return item.attributes.Availability;
     },
   },
   markerType: 'circle-marker',
@@ -229,12 +75,6 @@ pinboard({
   },
   cyclomedia: {
     enabled: false,
-    measurementAllowed: false,
-    popoutAble: true,
-    recordingsUrl: 'https://atlas.cyclomedia.com/Recordings/wfs',
-    username: process.env.VUE_APP_CYCLOMEDIA_USERNAME,
-    password: process.env.VUE_APP_CYCLOMEDIA_PASSWORD,
-    apiKey: process.env.VUE_APP_CYCLOMEDIA_API_KEY,
   },
   dataSources: {
     accessCenters,
@@ -261,25 +101,14 @@ pinboard({
       },
     },
   },
-  infoCircles: {
-    'symptomatic': {
-      'html': '\
-      <div class="full-div">For more information, see <a class="white-font-link" target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">\
-      Symptoms of coronavirus (CDC)</a>.</div>\
-      ',
-    },
-  },
   map: {
-    // type: 'leaflet',
     type: 'mapbox',
-    // tiles: 'hosted',
     containerClass: 'map-container',
     defaultBasemap: 'pwd',
     center: [ -75.163471, 39.953338 ],
     minZoom: 11,
     maxZoom: 25,
     shouldInitialize: true,
-
     zoom: 12,
     geocodeZoom: 15,
     imagery: {
