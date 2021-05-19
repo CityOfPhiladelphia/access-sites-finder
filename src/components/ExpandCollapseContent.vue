@@ -13,46 +13,69 @@
           Philadelphia, PA {{ item.attributes.CODE }} <br>
         </div>
       </div>
-    <!-- 
-      <div
-        v-if="item.attributes.ProviderURL"
-        class="grid-x detail"
-      >
-        <div class="small-2">
-          <font-awesome-icon icon="globe" />
-        </div>
-        <div class="small-22">
-          <a
-            target="_blank"
-            :href="item.attributes.ProviderURL"
-          >{{ $t('website') }}</a>
-        </div>
-      </div> -->
-
-      <!-- <div
-        v-if="item.attributes.contact_phone_number"
-        class="grid-x detail"
-      >
-        <div class="small-2">
-          <font-awesome-icon icon="phone" />
-        </div>
-        <div class="small-22">
-          {{ item.attributes.contact_phone_number }}
-        </div>
-      </div> -->
     </div>
-    <div>
+
+    <div class="cell medium-12">
+      <div
+        v-if="item.attributes.Availability"
+        class="grid-x detail"
+      >
+        <div class="small-2">
+          <font-awesome-icon :icon="parseIcon(item.attributes.Availability)" />
+        </div>
+        <div class="small-22">
+          {{ parseAvailability(item.attributes.Availability) }}
+        </div>
+      </div>
+    </div>
+
+    <div class="small-24">
+      <vertical-table-light
+        class="print-padding"
+        :slots="mainVerticalTableSlots"
+        :options="mainVerticalTableOptions"
+      >
+        <template
+          v-slot:component1
+          class="table-slot"
+        >
+          <div class="td-textbox">
+            <span
+              class="td-style"
+            >
+              Registration is required. Fill out the <a
+                href="https://www.cognitoforms.com/DHSOST1/AccessCenterRegistrationInterestForm"
+                target="_blank"
+              >Registration Interest Form <font-awesome-icon icon="external-link-alt" /></a>.
+            </span>
+          </div>
+        </template>
+        <template
+          v-slot:component2
+          class="table-slot"
+        >
+          <div class="td-textbox">
+            <span
+              class="td-style"
+            >
+              Priority will be given to families who work outside of the home and can’t afford or access childcare support.
+            </span>
+          </div>
+        </template>
+      </vertical-table-light>
+    </div>
+    <!-- <div>
       Registration required. <br>
       Fill out the <a
-        href="https://www.cognitoforms.com/DHSOST1/AccessCenterRegistrationInterestForm" 
+        href="https://www.cognitoforms.com/DHSOST1/AccessCenterRegistrationInterestForm"
         target="_blank">Registration Interest Form
         <font-awesome-icon
           icon="external-link-alt"
-        /></a>.
-    </div>
-        <div>
-        <b>Eligibility:</b> Priority will be given to families who work outside of the home and can’t afford or access childcare support.<br>
-      </div>
+        /></a>. <br>
+    </div><br> -->
+    <!-- <div>
+      <p><b>Eligibility:</b> Priority will be given to families who work outside of the home and can’t afford or access childcare support.</p>
+    </div> -->
   </div>
 </template>
 
@@ -80,20 +103,23 @@ export default {
         id: 'mainTable',
         fields: [
           {
-            label: 'eligibility',
-            labelType: 'i18n',
+            label: 'Registration',
             valueType: 'component1',
+          },
+          {
+            label: 'Eligibility',
+            valueType: 'component2',
           },
         ],
       };
-      if (this.days.length > 0) {
-        let newField = {
-          label: 'testingHours',
-          labelType: 'i18n',
-          valueType: 'component2',
-        };
-        slots.fields.push(newField);
-      }
+      // if (this.days.length > 0) {
+      //   let newField = {
+      //     label: 'testingHours',
+      //     labelType: 'i18n',
+      //     valueType: 'component2',
+      //   };
+      //   slots.fields.push(newField);
+      // }
 
       return slots;
     },
@@ -183,6 +209,24 @@ export default {
 
   },
   methods: {
+    parseAvailability(value) {
+      let newValue;
+      if (value === "Likely Availability") {
+        newValue = 'Spaces likely available';
+      } else if (value === "No Availability") {
+        newValue = 'No spaces available';
+      }
+      return newValue;
+    },
+    parseIcon(value) {
+      let newValue;
+      if (value === "Likely Availability") {
+        newValue = 'check';
+      } else if (value === "No Availability") {
+        newValue = 'times-circle';
+      }
+      return newValue;
+    },
     parseAddress(address) {
       const formattedAddress = address.replace(/(Phila.+)/g, city => `<div>${city}</div>`).replace(/^\d+\s[A-z]+\s[A-z]+/g, lineOne => `<div>${lineOne}</div>`).replace(/,/, '');
       return formattedAddress;
@@ -193,6 +237,10 @@ export default {
 </script>
 
 <style lang="scss">
+
+.table-light table {
+  margin-left: 0px !important;
+}
 
 .td-style {
   font-size: 14px !important;

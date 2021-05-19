@@ -34,7 +34,8 @@
         <li>Search for an Access Center by address. </li>
         <li>Click on a map location for specific site information. </li>
       </ul>
-      <p>Access Centers help kids and their families with their internet access and childcare needs during digital learning time (weekdays from 8:00 a.m. to 4:30 p.m.). Access Centers are free, but they are NOT drop-off centers. You must check eligibility and register your child in advance. For full program details, visit the <a href="https://www.phila.gov/access-centers/">Access Centers webpage.</a>
+      <p>
+        Access Centers help kids and their families with their internet access and childcare needs during digital learning time. Access Centers are free, but they are NOT drop-in centers. You must check eligibility and register your child in advance. For full program details, visit the <a href="https://www.phila.gov/access-centers/">Access Centers webpage.</a>
       </p>
       <h2>Who is eligible </h2>
       <p>Philadelphia students can register for an Access Center if they are: </p>
@@ -43,14 +44,24 @@
         <li>Children of caregivers working outside the home who cannot provide supervision or are not able to afford or access childcare. </li>
       </ul>
       <p>Access Centers provide childcare support for families without other options. Don’t qualify? Up to 35,000 eligible K-12 households who need help with in-home internet access for digital learning can learn more about their options through <a href="https://www.phila.gov/programs/phlconnected/">PHLConnectEd</a>. </p>
+      <h2>When centers are open </h2>
+      <p>Access Centers are open to registered students Monday through Friday from 8 a.m. to 4:30 p.m., except on the following dates:</p>
+      <ul>
+        <li>Monday, September 28 (full-day closure)</li>
+        <li>Monday, October 12 (full-day closure)</li>
+        <li>Friday, October 16 (sites close at 12 p.m.)</li>
+        <li>Tuesday, November 3 (full-day closure)</li>
+        <li>Wednesday, November 11 (full-day closure).</li>
+      </ul>
       <h2>How to register </h2>
       <p> To express interest in registering your child for an Access Center: </p>
       <ul>
         <li>Read the "Who is eligible" section above to confirm your child qualifies. </li>
-        <li>Fill out the <a href="https://www.cognitoforms.com/DHSOST1/AccessCenterRegistrationInterestForm">registration interest form
-          <font-awesome-icon
-            icon="external-link-alt"
-          /></a> or call (215) 709-5366. 
+        <li>
+          Fill out the <a href="https://www.cognitoforms.com/DHSOST1/AccessCenterRegistrationInterestForm">registration interest form
+            <font-awesome-icon
+              icon="external-link-alt"
+            /></a> or call (215) 709-5366. 
         </li>
       </ul>
       <p>Students are NOT registered until confirmed by an Access Center. If you are eligible, an Access Center team member will reach out to help you with the next step of registration. If you are not eligible, you will receive a response letting you know.</p>
