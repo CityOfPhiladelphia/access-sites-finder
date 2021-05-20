@@ -11,7 +11,7 @@
         class="grid-y exclamation-details small-19 medium-20"
       >
         <div><b>{{ $t('beforeYouGo') }}:</b></div>
-        <div>Access Centers are free, but you must check eligibility and register your child in advance. For full program details, visit the <a href="https://www.phila.gov/access-centers">Access Centers webpage</a>. </div>
+        <div>Enrollment in Access Centers is now closed. Visit <a href="https://www.phila.gov/programs/phlconnected/">PHLConnectED</a> for assistance with internet access for digital learning, or see <a href="https://www.phila.gov/programs/playitsafephl/">PlayItSafePHL</a> to learn about summer programs. </div>
       </div>
     </div>
 
@@ -28,8 +28,7 @@
       class="main-area"
     >
       <h1>About this finder</h1>
-      <p>This tool can help you find an Access Center in Philadelphia. </p>
-      <p>You can: </p>
+      <p>This tool can help you find an Access Center in Philadelphia. You can:</p>
       <ul>
         <li>Search for an Access Center by address. </li>
         <li>Click on a map location for specific site information. </li>
@@ -45,31 +44,216 @@
       </ul>
       <p>Access Centers provide childcare support for families without other options. Don’t qualify? Up to 35,000 eligible K-12 households who need help with in-home internet access for digital learning can learn more about their options through <a href="https://www.phila.gov/programs/phlconnected/">PHLConnectEd</a>. </p>
       <h2>When centers are open </h2>
-      <p>Access Centers are open to registered students Monday through Friday from 8 a.m. to 4:30 p.m., except on the following dates:</p>
-      <ul>
-        <li>Monday, September 28 (full-day closure)</li>
-        <li>Monday, October 12 (full-day closure)</li>
-        <li>Friday, October 16 (sites close at 12 p.m.)</li>
-        <li>Tuesday, November 3 (full-day closure)</li>
-        <li>Wednesday, November 11 (full-day closure).</li>
-      </ul>
+      <p><strong>All Access Centers will close after Friday, June 11, 2021.</strong></p>
+      <p>Access Centers are open to registered students Monday through Friday from 8 a.m. to 4:30 p.m., except on the following dates.</p>
+      <table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100%">
+        <thead>
+          <tr>
+            <th
+              data-label="Date"
+              scope="col"
+            >
+              Date
+            </th> 
+
+            <th
+              data-label="Closure type"
+              scope="col"
+            >
+              Closure type
+            </th>
+          </tr>
+        </thead> 
+
+        <tbody>
+          <tr>
+            <td data-label="Date">
+              Monday, September 28, 2020
+            </td> 
+
+            <td data-label="Closure type">
+              Full-day
+            </td>
+          </tr> 
+
+          <tr>
+            <td data-label="Date">
+              Monday, Oct. 12, 2020
+            </td> 
+
+            <td data-label="Closure type">
+              Full-day
+            </td>
+          </tr> 
+
+          <tr>
+            <td data-label="Date">
+              Friday, Oct. 16, 2020
+            </td> 
+
+            <td data-label="Closure type">
+              Half-day, sites close at noon
+            </td>
+          </tr> 
+
+          <tr>
+            <td data-label="Date">
+              Tuesday, Nov. 3, 2020
+            </td> 
+
+            <td data-label="Closure type">
+              Full-day
+            </td>
+          </tr> 
+
+          <tr>
+            <td data-label="Date">
+              Wednesday, Nov. 11, 2020
+            </td> 
+
+            <td data-label="Closure type">
+              Full-day
+            </td>
+          </tr> 
+
+          <tr>
+            <td data-label="Date">
+              Thursday, Nov. 26 and Friday, Nov. 27, 2020
+            </td> 
+
+            <td data-label="Closure type">
+              Full-day
+            </td>
+          </tr> 
+
+          <tr>
+            <td data-label="Date">
+              Friday, Dec. 11, 2020
+            </td> 
+
+            <td data-label="Closure type">
+              Half-day, sites close at noon
+            </td>
+          </tr> 
+
+          <tr>
+            <td data-label="Date">
+              Thursday, Dec. 24, 2020 through Friday, Jan. 1, 2021
+            </td> 
+
+            <td data-label="Closure type">
+              Full-day
+            </td>
+          </tr> 
+
+          <tr>
+            <td data-label="Date">
+              Friday, Jan. 15, 2021
+            </td> 
+
+            <td data-label="Closure type">
+              Half-day, sites close at noon
+            </td>
+          </tr> 
+
+          <tr>
+            <td data-label="Date">
+              Monday, Jan. 18, 2021
+            </td> 
+
+            <td data-label="Closure type">
+              Full-day
+            </td>
+          </tr> 
+
+          <tr>
+            <td data-label="Date">
+              Friday, Feb. 12, 2021
+            </td> 
+
+            <td data-label="Closure type">
+              Half-day, sites close at noon
+            </td>
+          </tr> 
+
+          <tr>
+            <td data-label="Date">
+              Monday, Feb. 15, 2021
+            </td> 
+
+            <td data-label="Closure type">
+              Full-day
+            </td>
+          </tr> 
+
+          <tr>
+            <td data-label="Date">
+              Friday, March 26, 2021
+            </td> 
+
+            <td data-label="Closure type">
+              Half-day, sites close at noon
+            </td>
+          </tr> 
+
+          <tr>
+            <td data-label="Date">
+              Monday, March 29 through Friday, April 2, 2021
+            </td> 
+
+            <td data-label="Closure type">
+              Full-day
+            </td>
+          </tr> 
+
+          <tr>
+            <td data-label="Date">
+              Thursday, May 13, 2021
+            </td> 
+
+            <td data-label="Closure type">
+              Full-day
+            </td>
+          </tr> 
+
+          <tr>
+            <td data-label="Date">
+              Tuesday, May 18, 2021
+            </td> 
+
+            <td data-label="Closure type">
+              Full-day
+            </td>
+          </tr> 
+
+          <tr>
+            <td data-label="Date">
+              Friday, May 28, 2021
+            </td> 
+
+            <td data-label="Closure type">
+              Half-day, sites close at noon
+            </td>
+          </tr> 
+
+          <tr>
+            <td data-label="Date">
+              Monday, May 31, 2021
+            </td> 
+
+            <td data-label="Closure type">
+              Full-day
+            </td>
+          </tr>
+        </tbody>
+      </table> 
       <h2>How to register </h2>
-      <p> To express interest in registering your child for an Access Center: </p>
-      <ul>
-        <li>Read the "Who is eligible" section above to confirm your child qualifies. </li>
-        <li>
-          Fill out the <a href="https://www.cognitoforms.com/DHSOST1/AccessCenterRegistrationInterestForm">registration interest form
-            <font-awesome-icon
-              icon="external-link-alt"
-            /></a> or call (215) 709-5366. 
-        </li>
-      </ul>
-      <p>Students are NOT registered until confirmed by an Access Center. If you are eligible, an Access Center team member will reach out to help you with the next step of registration. If you are not eligible, you will receive a response letting you know.</p>
+      <p>Enrollment in Access Centers is now closed. Visit <a href="https://www.phila.gov/programs/phlconnected/">PHLConnectED</a> for assistance with internet access for digital learning, or see <a href="https://www.phila.gov/programs/playitsafephl/">PlayItSafePHL</a> to learn about summer programs. </p>
       <div
         class="custom-callout"
       >
         <p class="no-margins">
-          <strong>Questions?</strong> Call (215) 709-5366 for help filling out the Access Center registration interest form, or if you need language interpretation services. Help is available Monday through Friday from 8 a.m. to 6 p.m. 
+          <strong>Questions?</strong> To learn more about this program, call (215) 709-5366.
         </p>
       </div>
     </div> <!-- end of main-area -->
@@ -209,11 +393,11 @@ export default {
 <style scoped>
 
   h1 {
-    font-size: 20px;
+    font-size: 1.8rem;
   }
 
   h2 {
-    font-size: 16px;
+    font-size: 1.5rem;
   }
 
   .main-area {
@@ -232,6 +416,13 @@ export default {
 
   .open-list-div {
     margin: 0 auto;
+  }
+
+  table th {
+    border: 2px solid white
+  }
+   table td {
+    border: 2px solid white
   }
 
   .open-list-button {
