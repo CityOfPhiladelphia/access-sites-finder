@@ -28,8 +28,7 @@
       class="main-area"
     >
       <h1>About this finder</h1>
-      <p>This tool can help you find an Access Center in Philadelphia. </p>
-      <p>You can: </p>
+      <p>This tool can help you find an Access Center in Philadelphia. You can:</p>
       <ul>
         <li>Search for an Access Center by address. </li>
         <li>Click on a map location for specific site information. </li>
@@ -46,7 +45,7 @@
       <p>Access Centers provide childcare support for families without other options. Don’t qualify? Up to 35,000 eligible K-12 households who need help with in-home internet access for digital learning can learn more about their options through <a href="https://www.phila.gov/programs/phlconnected/">PHLConnectEd</a>. </p>
       <h2>When centers are open </h2>
       <p><strong>All Access Centers will close after Friday, June 11, 2021.</strong></p>
-      <p>Access Centers are open to registered students Monday through Friday from 8 a.m. to 4:30 p.m., except on the following dates:</p>
+      <p>Access Centers are open to registered students Monday through Friday from 8 a.m. to 4:30 p.m., except on the following dates.</p>
       <table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100%">
         <thead>
           <tr>
