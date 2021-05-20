@@ -45,8 +45,8 @@ pinboard({
   alerts: {
     modal: {
       enabled: true,
-      header: 'Access Centers ',
-      body: '<p>Access Centers are free, but you must check eligibility and register your child in advance. For full program details, visit the <a href="https://www.phila.gov/access-centers">Access Centers webpage</a>.',
+      header: 'Access Centers',
+      body: '<p>Enrollment in Access Centers is now closed. Visit <a href="https://www.phila.gov/programs/phlconnected/">PHLConnectED</a> for assistance with internet access for digital learning, or see <a href="https://www.phila.gov/programs/playitsafephl/">PlayItSafePHL</a> to learn about summer programs. </p>',
     },
   },
   gtag: {
